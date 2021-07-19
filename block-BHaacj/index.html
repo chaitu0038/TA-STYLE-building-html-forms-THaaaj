@@ -8,155 +8,147 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     </head>
     <body>
-        <header class="container header">
-            <div class="flex">
-                <div class="flex logo">
-                    <img src="./assets/logo.png" alt="logo" height="100" width="100">
-                    <h2>JOURNEY</h2>
+       <header class="navbar">
+           <div class="container flex">
+               <a class="flex brand" href="#">
+                   <img src="./assets/logo.png" alt="Journey">
+                   <strong>Journey</strong>
+               </a>
+               <nav>
+                   <ul class="flex nav-menu">
+                       <li class="nav-menu-item">
+                           <a class="active" href="#">Home</a>
+                       </li>
+                       <li class="nav-menu-item">
+                            <a href="#">Top Destination</a>
+                        </li>
+                        <li class="nav-menu-item">
+                            <a href="#">Recommended Places</a>
+                        </li>
+                        <li class="nav-menu-item">
+                            <a href="#">Contact Us</a>
+                        </li>
+                   </ul>
+               </nav>
+           </div>
+       </header>
+       <main>
+        <div class="container">
+            <section class="hero">
+                <h1 class="hero-heading">Let's Begin</h1>
+                <div>
+                    <img src="./assets/dots-3.png" alt="dots">
                 </div>
-                <nav class="nav">
-                    <ul class="flex">
-                        <li>Home</li>
-                        <li>Top Destinations</li>
-                        <li>Recommended Places</li>
-                        <li>Contact Us</li>
-                    </ul>
-                </nav>
-            </div>
-        </header>
-        <main>
-            <section class="section1">
-                <article class="article container">
-                    <div class="article-1">
-                        <h1>LET'S BEGIN</h1>
-                        <img src="./assets/dots-3.png" alt="dots" height="50" width="15"><br>
-                        <span>We assist you to choose the best</span>
-                        <div class="angle">
-                            <i class="fa fa-chevron-down"></i>
+                <h4 class="hero-subheading">We assist you to choose the best</h4>
+                <div class="icon-box">
+                    <i class="fa fa-chevron-down"></i>
+                </div>
+                <form class="flex item-start">
+                    <fieldset class="flex-46">
+                        <label for="destination">Choose Your destination...</label>
+                        <input class="form-control" type="text" name="destination" id="destination" placeholder="Type your destination">
+                        <div class="flex margin-top">
+                            <div>
+                                <label for="check-in">Check In Date</label>
+                                <input class="form-control" type="date" name="check-in" placeholder="Check In" id="Check In">
+                            </div>
+                            <div>
+                                <label for="check-out">Check Out Date</label>
+                                <input class="form-control" type="date" name="check-out" placeholder="Check Out" id="Check Out">
+                            </div>
                         </div>
-                    </div>
-                    <div class="article-2 container">
-                        <div class="flex article-head1">
+                    </fieldset>
+                    <fieldset class="flex-46">
+                        <div class="flex">
                             <div>
-                                <h4>Choose Your Destination</h4>
-                                <span>Type your destination...</span>
-                            </div>
-                            <nav class="flex article-nav">
-                                <ul>
-                                    How many rooms?
-                                    <li class="flex">
-                                        1 Room
-                                        <i class='fa fa-sort'></i>
-                                    </li>
-                                </ul>
-                                <ul>
-                                    Adult
-                                    <li class="flex">1
-                                        <i class='fa fa-sort'></i>
-                                    </li>
-                                </ul>
-                                <ul>
-                                    Children
-                                    <li class="flex">0
-                                        <i class='fa fa-sort'></i>
-                                    </li>
-                                </ul>
-                            </nav>
-                        </div><br>
-                        <div class="flex article-head1">
-                            <div>
-                                <h4>Check In Date</h4>
-                                <span>Check In</span>
+                                <label for="room">How Many Rooms?</label>
+                                <select class="form-control" name="room" id="room">
+                                <option value="">1 Room</option>
+                                <option value="">2 Room</option>
+                                <option value="">3 Room</option>
+                                <option value="">4 Room</option>
+                                <option value="">5 Room</option>
+                                </select>
                             </div>
                             <div>
-                                <h4>Check Out Date</h4>
-                                <span>Check Out</span>
+                                <label for="adult">Adults</label>
+                                <select class="form-control" name="adult" id="adult">
+                                <option value="">1</option>
+                                <option value="">2</option>
+                                <option value="">3</option>
+                                <option value="">4</option>
+                                <option value="">5</option>
+                                </select>
                             </div>
-                            <ul class="article-a">
-                                <li><a href="#">CHECK AVAILABILITY</a></li>
-                            </ul>
+                            <div>
+                                <label for="child">Children</label>
+                                <select class="form-control" name="child" id="child">
+                                <option value="">0</option>
+                                <option value="">1</option>
+                                <option value="">2</option>
+                                <option value="">3</option>
+                                <option value="">4</option>
+                                </select>
+                            </div>
                         </div>
-                    </div>
-                </article>
-                <div class="article-text">
-                    <h2>YOUR<i>JOURNEY</i> IS OUR PRIORITY</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non deleniti, saepe reprehenderit excepturi a nam neque ab, Non deleniti, saepe reprehenderit excepturi a nam neque ab, iste inventore facilis deserunt, natus doloribus placeat distinctio? Nulla quod voluptatem rem suscipit.</p>
-                    <a href="#">CONTINUE EXPLORE</a>
+                        <input class="btn btn-primary margin-top" type="submit" value="check Availability">
+                    </fieldset>
+                </form>
+            </section>
+            <section class=" padding text-center about">
+                <div class="about-wrapper">
+                    <h2>Your <strong>journey</strong> is our priority</h2>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Beatae veritatis saepe tenetur earum ea doloremque ipsum dolore qui eos, neque quis dolorum enim natus sapiente quibusdam numquam voluptate architecto repellendus.</p>
+                    <a class="btn btn-primary" href="#">Continue Explore</a>
                 </div>
             </section>
             <section>
-                <article>
-                    <div class="flex">
-                        <img src="./assets/tm-img-01.jpg" alt="img-1" height="500" width="650">
-                        <div>
-                            <ul class=" image-span flex">
-                                <li class="img-span">
-                                    <i class="fa fa-chevron-circle-left"></i>
-                                </li>
-                                <li class="img-span">
-                                    <i class="fa fa-chevron-circle-right"></i>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="image-text1">
-                            <h3>Europe's most visited places</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur explicabo repellendus est repudiandae. Voluptas eum tenetur harum veritatis exercitationem! Doloremque dolor unde, voluptatem ex tempore ratione totam! Reiciendis, eum beatae?</p>
-                            <a href="#">CONTINUE READING</a>
-                        </div>
-                    </div>
-                    <div class="flex">
-                        <div class="image-span2 flex">
-                            <div class="image-text2">
-                                <h3>Europe's most visited places</h3>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur explicabo repellendus est repudiandae. Voluptas eum tenetur harum veritatis exercitationem! Doloremque dolor unde, voluptatem ex tempore ratione totam! Reiciendis, eum beatae?</p>
-                                <a href="#">CONTINUE READING</a>
+                <article class="flex article">
+                    <div class="flex-50 font-0 article-col-left">
+                        <img src="./assets/tm-img-01.jpg" alt="tm1">
+                        <div class="flex justify-end nav-btn-container">
+                            <div class="nav-btn center">
+                                <div class="nav-btn-icon">
+                                    <i class="fa fa-angle-left"></i>
+                                </div>
                             </div>
-                            <div>
-                                <ul class=" image-span1 flex">
-                                    <li class="img-span">
-                                        <i class="fa fa-chevron-circle-left"></i>
-                                    </li>
-                                    <li class="img-span">
-                                        <i class="fa fa-chevron-circle-right"></i>
-                                    </li>
-                                </ul>
+                            <div class="nav-btn center">
+                                <div class="nav-btn-icon">
+                                    <i class="fa fa-angle-right"></i>
+                                </div>
                             </div>
                         </div>
-                        <img class="image-art" src="./assets/tm-img-02.jpg" alt="img-2" height="500" width="650">
                     </div>
-                    <div class="flex">
-                        <img src="./assets/tm-img-03.jpg" alt="img-1" height="500" width="650">
-                        <div>
-                            <ul class=" image-span flex">
-                                <li class="img-span">
-                                    <i class="fa fa-chevron-circle-left"></i>
-                                </li>
-                                <li class="img-span">
-                                    <i class="fa fa-chevron-circle-right"></i>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="image-text1">
-                            <h3>Europe's most visited places</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur explicabo repellendus est repudiandae. Voluptas eum tenetur harum veritatis exercitationem! Doloremque dolor unde, voluptatem ex tempore ratione totam! Reiciendis, eum beatae?</p>
-                            <a href="#">CONTINUE READING</a>
+                    <div class="flex-50 article-col-right left">
+                        <h3>Europe's most visited places</h3>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloribus veritatis aut hic, ullam, laborum beatae dolore quis et mollitia magnam blanditiis. Error provident unde voluptas accusamus rerum animi, quos sit.</p>
+                        <a class="btn btn-secondary" href="#">CONTINUE READING</a>
+                    </div>
+                </article>
+                <article class="flex article">
+                    <div class="flex-50 article-col-right right">
+                        <h3>Europe's most visited places</h3>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloribus veritatis aut hic, ullam, laborum beatae dolore quis et mollitia magnam blanditiis. Error provident unde voluptas accusamus rerum animi, quos sit.</p>
+                        <a class="btn btn-secondary" href="#">CONTINUE READING</a>
+                    </div>
+                    <div class="flex-50 font-0 article-col-left">
+                        <img src="./assets/tm-img-01.jpg" alt="tm1">
+                        <div class="flex justify-end nav-btn-container-left">
+                            <div class="nav-btn center">
+                                <div class="nav-btn-icon">
+                                    <i class="fa fa-angle-left"></i>
+                                </div>
+                            </div>
+                            <div class="nav-btn center">
+                                <div class="nav-btn-icon">
+                                    <i class="fa fa-angle-right"></i>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </article>
             </section>
-            <section>
-                <article>
-                    <div class="maps flex">
-                        <img src="./assets/maps/africa.png" alt="africa" height="150" width="150">
-                        <img src="./assets/maps/antartica.png" alt="antartica" height="150" width="150">
-                        <img src="./assets/maps/australia.png" alt="australia" height="150" width="150">
-                        <img class="map-img" src="./assets/maps/asia.png" alt="asia" height="150" width="150">
-                        <img src="./assets/maps/europe.png" alt="europe" height="150" width="150">
-                        <img src="./assets/maps/north-america.png" alt="north-america" height="150" width="150">
-                        <img src="./assets/maps/south-america.png" alt="south-america" height="150" width="150">
-                    </div>
-                </article>
-            </section>
-        </main>
+        </div>
+       </main>
     </body>
 </html>
